@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Models, Margin and Padding</title>
+        <style>
+            /* CSS Reset */
+
+            * {
+                /* * means everything */
+                margin: 10px;
+                /* Margin is area around the body elements */
+                padding: 10px;
+                /* Padding is the area around the elements inside the border */
+                /* box-sizing: border-box; */
+                /*if padding is larger than border... then border is enlarged even tho it is limited.. so we use this*/
+            }
+
+            .box {
+                background: lightblue;
+                border: 3px #322b9b solid;
+                width: 500px;
+
+                /* Padding on all sides */
+                padding: 20px;
+                /* Padding per side */
+                /* 
+                padding-top: 30px;
+                padding-right: 50px;
+                padding-bottom: 40px;
+                padding-left: 30px;
+                */
+                /* Padding shorthand = top,right,bottom,left */
+                padding: 30px 50px 40px 30px;
+
+                /* Same applies for the margin.. same type of format */
+                margin: 30px 50px 40px 30px;
+
+            }
+
+            .box h3 {
+                padding-bottom: 5px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum dolore porro ex amet ea,
+                iusto sed incidunt accusamus nulla.</p>
+        </div>
+        <div class="box">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum dolore porro ex amet ea,
+                iusto sed incidunt accusamus nulla.</p>
+        </div>
+
+    </body>
+
+</html>
